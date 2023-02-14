@@ -1,0 +1,17 @@
+
+
+.merci-bottom-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: absolute;
+  top: 970px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  margin-left: 46px;
+  width: 1400px;
+  font-family: parisienne, Arial;
+  font-size: 150px;
+  color: #e7e7e7;
+}

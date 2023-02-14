@@ -1,0 +1,161 @@
+.main-left-section {
+  height: 400px;
+  width: 250px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+
+  padding-left: 120px;
+  margin-top: 80px;
+
+  
+
+}
+
+.settings-section {
+  height: 400px;
+  width: 250px;
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
+.title-settings {
+  font-size: 28px;
+  margin-top: 15px;
+  width: 220px;
+  text-align: center;
+}
+
+.settings-proposition-section {
+  height: 220px;
+  width: 230px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.explication-point-interrogation-button {
+  height: 17px;
+  width: 17px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.explication-point-interrogation-button .text-explication {
+  width: 200px;
+  position: absolute;
+  z-index: 10;
+  background-color: #757575;
+  color: #e7e7e7;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: bahnschrift-1;
+  top: 21px;
+  left: -100px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.explication-point-interrogation-button:hover .text-explication {
+  opacity: 1;
+}
+
+.explication-point-interrogation-icon {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.settings-nb-diff-questions-section {
+  width: 225px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+  justify-content: space-between;
+}
+
+.settings-chrono-section {
+  width: 200px;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+  justify-content: space-between;
+}
+
+
+label {
+  margin-top: 2px;
+  float: left;
+}
+
+input[type="radio"] {
+  margin-left: 3px;
+  width: 17px;
+  height: 17px;
+}
+
+.custom-radio {
+  accent-color: #4a4a4a;
+  cursor: pointer;
+}
+
+.settings-themes-section {
+  width: 150px;
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.dropdown-list {
+  margin-top: 5px;
+  padding-left: 6px;
+  height: 30px;
+  font-family: bahnschrift-1, Arial;
+  color: #4a4a4a;
+  font-size: 17px;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4a4a4a;
+  border-radius: 6px;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+  box-shadow: inset 3px 3px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.stop-game-button {
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  font-family: bahnschrift-1, Arial;
+  text-align: center;
+  color: #e7e7e7;
+  
+  cursor: default;
+  background-color: #e7e7e7;
+  transition: color 0.15s;
+  transition: background-color 0.15s ;
+}

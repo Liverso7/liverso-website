@@ -1,0 +1,29 @@
+.main-zone {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-between;
+
+  position: relative;
+  top: -20px;
+
+}
+
+.LVSO-text {
+  position: fixed;
+  z-index: 100;
+  bottom: 10px;
+  right: 20px;
+  font-family: cinzel, Arial;
+  font-size: 16px;
+  color: #e7e7e7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.dot-top-of-3-sections {
+  font-size: 21px;
+}
+
+
+
+
