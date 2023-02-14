@@ -27,6 +27,8 @@
 .title-settings {
   font-size: 28px;
   margin-top: 15px;
+  width: 220px;
+  text-align: center;
 }
 
 .settings-proposition-section {
@@ -145,7 +147,7 @@ input[type="radio"] {
   width: 130px;
   height: 30px;
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 10px;
   border: none;
   border-radius: 5px;
   font-family: bahnschrift-1, Arial;
