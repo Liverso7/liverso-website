@@ -25,20 +25,15 @@
   cursor: pointer;
   
   background-color: #e7e7e7;
+  font-family: parisienne, Arial;
+  font-size: 80px;
+  color: #4a4a4a;
+  transition: color 0.15s;
   
 }
 
-.play-button-text {
-  font-family: parisienne, Arial;
-  font-size: 80px;
-  font-weight: bold;
-  color: #4a4a4a;
-  transition: color 0.15s;
 
-}
-
-
-.play-button-text:hover {
+.play-button:hover {
   color: #757575;
 }
 
