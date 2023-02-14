@@ -1,0 +1,120 @@
+.recover-zone-question {
+  width: 600px;
+  height: 300px;
+  margin-bottom: 35px;
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  transition: box-shadow 0.35s;
+  transition: z-index 0.15s;
+
+  position: relative;
+  top: -335px;
+  z-index: 5;
+}
+
+.play-button {
+  height: 120px;
+  width: 190px;
+  padding-left: 20px;
+  margin-top: 60px;
+  border: none;
+  font-family: parisienne, Arial;
+  color: #4a4a4a;
+  font-size: 80px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+  background-color: #e7e7e7;
+  transition: color 0.15s;
+}
+
+.play-button:hover {
+  color: #757575;
+}
+
+.play-button:active {
+  color: #a9a9a9;
+}
+
+.info-nb-questions-current-settings {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.info-current-settings {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.trouver-le-plus-de-bonnes-reponses-class {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 570;
+}
+
+
+
+.recover-gameover-zone {
+  width: 600px;
+  height: 300px;
+  margin-bottom: 35px;
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  transition: box-shadow 0.35s;
+  transition: z-index 0.15s;
+
+  position: relative;
+  top: -670px;
+  z-index: -1;
+}
+
+.gameover-title-text {
+  height: 100px;
+  width: 342px;
+  margin-top: 40px;
+  padding-left: 10px;
+  margin-bottom: 3px;
+  font-family: parisienne, Arial;
+  color: #4a4a4a;
+  font-size: 80px;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
+
+
+
+.merci-text {
+  font-family: parisienne, Arial;
+  font-size: 38px;
+  margin-top: 10px;
+}
+
+.regame-button {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  font-family: bahnschrift-1, Arial;
+  text-align: center;
+  color: #fcfcfc;
+  text-shadow: 1px 1px 1px rgba(214, 214, 214, 0.8);
+  cursor: pointer;
+  background-color: rgb(13,134,255);
+}
+
+.regame-button:hover {
+  color: #f1f1f1;
+}
+
+.regame-button:active {
+  color: #c4c4c4;
+}

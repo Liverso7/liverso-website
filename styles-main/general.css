@@ -1,0 +1,37 @@
+
+
+body {
+  overflow-y: auto;
+  overflow-x: auto;
+  margin: 0;
+}
+
+p {
+  font-family: bahnschrift-1, Arial;
+  color: #4a4a4a;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: text-shadow 0.4s;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cbcbcb;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a9a9a9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4a4a4a;
+}
