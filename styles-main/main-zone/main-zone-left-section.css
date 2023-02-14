@@ -1,5 +1,5 @@
 .main-left-section {
-  height: 400px;
+  height: 430px;
   width: 250px;
   display: flex;
   flex-direction:column;
@@ -13,7 +13,7 @@
 }
 
 .settings-section {
-  height: 400px;
+  height: 430px;
   width: 250px;
   background-color: #e7e7e7;
   display: flex;
