@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Améliorer votre culture générale !">
+
+
+    <title>Liverso.fr</title>
+    <link rel="icon" type="image/png" href="icons/liverso-logo-white.png">
+
+    <link rel="stylesheet" href="styles-main/general.css">
+    <link rel="stylesheet" href="styles-main/header.css">
+    <link rel="stylesheet" href="styles-main/bottom.css">
+    <link rel="stylesheet" href="styles-main/main-zone/main-zone-general.css">
+    <link rel="stylesheet" href="styles-main/main-zone/main-zone-left-section.css">
+    <link rel="stylesheet" href="styles-main/main-zone/main-zone-middle-section.css">
+    <link rel="stylesheet" href="styles-main/main-zone/main-zone-right-section.css">
+    <link rel="stylesheet" href="styles-main/main-zone/main-zone-recover-area.css">
+
+    <style>
+      @font-face {
+      font-family: bahnschrift-1;
+      src: url(fonts/BAHNSCHRIFT.TTF);
+      }
+     
+      @font-face {
+      font-family: cookie;
+      src: url(fonts/Cookie-Regular.ttf);
+      }
+
+      @font-face {
+      font-family: parisienne;
+      src: url(fonts/Parisienne-Regular.ttf);
+      }
+
+      @font-face {
+      font-family: cinzel;
+      src: url(fonts/CinzelDecorative-Bold.ttf);
+      }
+
+      @font-face {
+      font-family: kalam;
+      src: url(fonts/Kalam-Regular.ttf);
+      }
+
+      body{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      
+    </style>
+
+  </head>
+  <body id="body-id">
+    <div class="header">
+        <div class="left-section"><p class="text-ameliorer-votre-culture-generale">améliorer votre culture générale.</p></div>
+        <div class="middle-section">
+          <a href="https://www.liverso.fr/"><button class="liverso-title-button">
+            <p>liverso<span class="liverso-fr-title">.fr</span></p>
+          </button></a>
+        </div>
+        <div class="right-section">
+          <!--<a href="liverso-contact.html"><button class="contact-button">contact</button></a>-->
+          <p class="dot-top-right">&#183;</p>
+          <p class="dot-top-right">&#183;</p>
+          <!--<a href="liverso-about-us.html"><button class="a-propos-button">à propos</button></a>-->
+        </div>
+    </div>
+    
+    <div class="main-zone">
+      <div class="LVSO-text">LVSO.</div>
+      <div class="main-left-section"> 
+        <div class="settings-section">
+          <p class="title-settings">PARAMETRES</p>
+          <p class="dot-top-of-3-sections">&#183;</p>
+          <div class="settings-proposition-section">
+            <label for="settings-nb-diff-questions-section"><p style="font-size: 18px; font-weight:600; text-align: center; width: 220px;">Nombre de questions différentes durant la partie</p></label>
+            <div name="settings-nb-diff-questions-section" class="settings-nb-diff-questions-section">
+              <div>
+                <input class="custom-radio" type="radio" name="nb_diff_questions" id="OFFnb-questions" value="Off" onclick="changeInfoInitSettings()">
+                <label for="OFFnb-questions"><p>Off</p></label>
+              </div>
+              <div>
+                <input class="custom-radio" type="radio" name="nb_diff_questions" id="10nb-questions" value="10" onclick="changeInfoInitSettings()">
+                <label for="10nb-questions"><p>10</p></label>
+              </div>
+              <div>
+                <input class="custom-radio" type="radio" name="nb_diff_questions" id="20nb-questions" value="20" onclick="changeInfoInitSettings()" checked>
+                <label for="20nb-questions"><p>20</p></label>
+              </div>
+              <div>
+                <input class="custom-radio" type="radio" name="nb_diff_questions" id="40nb-questions" value="40" onclick="changeInfoInitSettings()">
+                <label for="40nb-questions"><p>40</p></label>
+              </div>
+              <div>
+                <input class="custom-radio" type="radio" name="nb_diff_questions" id="80nb-questions" value="80" onclick="changeInfoInitSettings()">
+                <label for="80nb-questions"><p>80</p></label>
+              </div>
+            </div>
+            <label for="settings-chrono-section"><p style="font-size: 20px; font-weight:600">Chronomètre</p></label>
+            <div name="settings-chrono-section" class="settings-chrono-section">
+              <div>
+                <input class="custom-radio" type="radio" name="chrono" id="offChrono" value="Off" onclick="changeInfoInitSettings()" checked>
+                <label for="offChrono"><p>Off</p></label>
+              </div>
+              <p style="font-size: 20px;">&#183;</p>
+              <div>
+                <input class="custom-radio" type="radio" name="chrono" id="2mnChrono" value="120s" onclick="changeInfoInitSettings()">
+                <label for="2mnChrono"><p>2min</p></label>
+              </div>
+              <p style="font-size: 20px;">&#183;</p>
+              <div>
+                <input class="custom-radio" type="radio" name="chrono" id="5mnChrono" value="300s" onclick="changeInfoInitSettings()">
+                <label for="5mnChrono"><p>5min</p></label>
+              </div>
+            </div>
+            <div class="settings-themes-section">
+              <label for="themes-menu"><p style="font-size: 20px; font-weight:530">Thème</p></label>
+              <select name="themes-menu" id="themes-menu" class="dropdown-list" onclick="changeInfoInitSettings()">
+                <option name="themes-menu" value="Tous">Tous</option>
+                <option name="themes-menu" value="Sciences">Sciences</option>
+                <option name="themes-menu" value="Sport">Sport</option>
+                <option name="themes-menu" value="Histoire/Géo">Histoire/Géo</option>
+              </select>
+            </div>
+            <div>
+              <button id="stop-game-button-id" class="stop-game-button" onclick="displayGameover('stopGame')"></button>
+            </div>
+            <p style="width: 200px; font-size: 13px; text-align: center; margin-top: 8px;">Les paramètres ne peuvent être changés uniquement entre les parties.</p>
+
+            <div><button style="top: 1px; right: 7px;" class="explication-point-interrogation-button"><img class="explication-point-interrogation-icon" src="icons/point-interrogation-cercle.png"><div class="text-explication">Durant la partie, différentes questions vont vous être posées à la suite. En limitant le nombre de questions différentes qui apparaîteront, vous reviendrez donc plus fréquemment sur les mêmes questions, ceux qui peut être utile pour apprendre.</div></button></div>
+            <div><button style="top: 84px; right: 32px;" class="explication-point-interrogation-button"><img class="explication-point-interrogation-icon" src="icons/point-interrogation-cercle.png"><div class="text-explication">Durant la partie, différentes questions vont vous être posées à la suite. En activant un chronomètre, la partie s'arrêtera automatiquement à la fin du temps imparti.</div></button></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-middle-section">
+        <div id="bienvenue-liverso-text-id" class="bienvenue-liverso-text">Bienvenue sur liverso.fr !</div>
+        <div id="zone-question-id" class="zone-question">
+          <div class="header-zone-question"><p id="time-left-id" class="time-left-text"></p><p id="question-header-id" class="question-header"></p></div>
+          <div class="zone-question-text">
+            <div class="text-question"><p id="question"></p></div>
+          </div>
+          <p id="answer-response-id" class="answer-response"></p>
+        </div>
+        <div id="recover-zone-question-id" class="recover-zone-question">
+          <button id="play-button-id" class="play-button" onclick="startGame()"><p class="play-button-text">Jouer</p></button>
+          <p id="info-nb-questions-current-settings-id" class="info-nb-questions-current-settings">Nombre de questions différentes durant la partie >> 20</p>
+          <p id="info-current-settings-id" class="info-current-settings">Chrono >> Off &#183; Thème >> Tous</p>
+          <p id="trouver-le-plus-de-bonnes-reponses-text" class="trouver-le-plus-de-bonnes-reponses-class">Trouver le plus de bonnes réponses !</p>
+        </div>
+        <div id="recover-gameover-zone-id" class="recover-gameover-zone">
+          <p id="gameover-title-text-id" class="gameover-title-text"></p>
+          <p id="merci-text-id" class="merci-text"></p>
+          <button id="regame-button-id" class="regame-button" onclick="regame()"></button>
+        </div>
+        
+        <div class="answer-bar-section"><input id="answer-bar-id" class="answer-bar" type="text" maxlength="30" placeholder="tapez votre réponse ici...">
+          <button id="press-enter-button-id" onclick="sendAnswer()" class="press-enter-button">appuyez sur ENTREE pour valider votre réponse</button>
+        </div>
+        <p style="color: white; font-size: 30px; position: relative; top: -690px; margin: 0;">&#x21E3;</p>
+        <div class="show-answer"><button id="show-answer-button-id" onclick="showAnswerORnextQuestion()" class="show-answer-button">REPONSE</button></div>
+      </div>
+      <div class="main-right-section">
+        <div class="stats-section">
+          <p class="title-stats">STATS</p>
+          <p class="dot-top-of-3-sections">&#183;</p>
+          <div class="stats-display-section">
+            <p style="margin-top: 15px;">Nombre de questions</p><p id="number-of-questions-id" class="text-number-of-questions">--</p>
+            <p>Nombre de bonnes réponses</p><p  id="number-of-good-answer-id" class="text-number-of-good-answer">--</p>
+            <p>Temps moyen pour trouver la réponse</p><p id="find-answer-average-time-id" class="text-find-answer-average-time">--</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="merci-bottom-text">Merci !</p>
+    <div><p style="position: relative; margin-left: 15px; margin-bottom: 15px; color: #e7e7e7; font-size: 14px; font-weight: lighter; text-shadow: 3px 3px 10px rgba(0,0,0,0.5);">
+      <span style="font-size: 15px; font-weight: bold;">Hébergement</span> <br>
+      GitHub Pages <a href="https://pages.github.com/" style="color: #e7e7e7;">https://pages.github.com/</a><br>
+      GitHub, Inc. <br>
+      88 Colin P. Kelly Jr. Street <br>
+      San Francisco, CA 94107 <br>
+      United States of America <br>
+      +1 (877) 448-4820
+      </p>
+    </div>
+    
+    <script src="script-liverso-main.js"></script>
+
+  </body>
+</html>

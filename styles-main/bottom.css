@@ -1,4 +1,6 @@
-.merci-bottom-div {
+
+
+.merci-bottom-text {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -6,9 +8,6 @@
   top: 970px;
   right: 0;
   left: 0;
-}
-
-.merci-bottom-text {
   text-align: center;
   margin-left: 46px;
   width: 1400px;
