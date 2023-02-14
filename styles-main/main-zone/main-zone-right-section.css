@@ -1,5 +1,5 @@
 .main-right-section {
-  height: 430px;
+  height: 440px;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 .stats-section {
-  height: 430px;
+  height: 440px;
   width: 250px;
   background-color: #e7e7e7;
   display: flex;
