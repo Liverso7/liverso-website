@@ -3,10 +3,10 @@
   flex-direction: row;
   align-items: top;
   justify-content: space-between;
+  margin: 0;
 
   position: relative;
   top: -20px;
-
 }
 
 .LVSO-text {
