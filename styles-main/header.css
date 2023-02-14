@@ -39,10 +39,11 @@
 }
 
 .liverso-title-button {
-  width: 330px;
-  height: 80px;
+  width: 400px;
+  height: 100px;
   border: none;
   background-color: transparent;
+  text-align: center;
   font-family: bahnschrift-1, Arial;
   color: #e7e7e7;
   font-size: 80px;
