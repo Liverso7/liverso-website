@@ -23,7 +23,6 @@
 
 .title-stats {
   font-size: 30px;
-  font-weight: 630;
   margin-top: 15px;
 }
 
@@ -36,12 +35,10 @@
   justify-content: space-between;
   font-size: 20px;
   text-align: center;
-  font-weight: 600;
 }
 
 .text-number-of-questions,
 .text-number-of-good-answer,
 .text-find-answer-average-time {
   font-size: 25px;
-  font-weight: 650;
 }

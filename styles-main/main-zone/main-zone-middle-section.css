@@ -47,7 +47,6 @@
 .time-left-text {
   width: 100px;
   font-size: 35px;
-  font-weight: 600;
   margin-right: 50px;
   transition: color 0.15s;
 }
@@ -78,7 +77,6 @@
 .answer-response {
   color: transparent;
   font-family: kalam;
-  font-weight: 600;
   font-size: 27px;
   padding-bottom: 10px;
   transition: color 0.4s;
@@ -106,7 +104,6 @@
 
 .answer-bar::placeholder {
   font-size: 20px;
-  font-weight: 600;
   font-family: bahnschrift-1, Arial;
 }
 
