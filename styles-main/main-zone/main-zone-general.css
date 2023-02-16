@@ -4,11 +4,11 @@
   align-items: top;
   justify-content: space-between;
   margin: 0;
-  width: fit-content;
 
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
+  justify-content: center;
   top: 100px;
 }
 
