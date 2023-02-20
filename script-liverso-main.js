@@ -1332,8 +1332,8 @@
       function pickTheQuestion(nb_diff_qts,themeChoosen) {
         if (nb_diff_qts != "Off" && themeChoosen != "Tous") {
           // nb_diff_qts*1 -> convert the string to a number.
-          if ((nb_diff_qts*1 + (Math.floor(nb_diff_qts/3)))> IDquestionsDuringThisGame.length) {
-            if (numberOfQuestions % 3 != 0 || IDquestionsDuringThisGame.length < 3 ) {
+          if ((nb_diff_qts*1 + (Math.floor(nb_diff_qts/4)))> IDquestionsDuringThisGame.length) {
+            if (numberOfQuestions % 4 != 0 || IDquestionsDuringThisGame.length < 4 ) {
               pickRandomQuestion = questions[Math.floor(Math.random()*questions.length)];
               while (pickRandomQuestion.theme != themeChoosen || lastQuestionID === pickRandomQuestion.id) {
                 pickRandomQuestion = questions[Math.floor(Math.random()*questions.length)];
@@ -1355,7 +1355,7 @@
           }
           LETSGO();
         } else if (nb_diff_qts === "Off" && themeChoosen != "Tous") {
-          if (numberOfQuestions % 3 != 0 || IDquestionsDuringThisGame.length < 3 ) {
+          if (numberOfQuestions % 4 != 0 || IDquestionsDuringThisGame.length < 4 ) {
             pickRandomQuestion = questions[Math.floor(Math.random()*questions.length)];
             while (pickRandomQuestion.theme != themeChoosen || lastQuestionID === pickRandomQuestion.id) {
               pickRandomQuestion = questions[Math.floor(Math.random()*questions.length)];
@@ -1369,8 +1369,8 @@
           }
           LETSGO();
         } else if (nb_diff_qts != "Off" && themeChoosen === "Tous") {
-          if ((nb_diff_qts*1 + (Math.floor(nb_diff_qts/3))) > IDquestionsDuringThisGame.length) {
-            if (numberOfQuestions % 3 != 0 || IDquestionsDuringThisGame.length < 3 ) {
+          if ((nb_diff_qts*1 + (Math.floor(nb_diff_qts/4))) > IDquestionsDuringThisGame.length) {
+            if (numberOfQuestions % 4 != 0 || IDquestionsDuringThisGame.length < 4 ) {
               
               pickRandomQuestion = questions[Math.floor(Math.random()*questions.length)];
               while (lastQuestionID === pickRandomQuestion.id) {
@@ -1394,7 +1394,7 @@
           }
           LETSGO();
         } else {
-          if (numberOfQuestions % 3 != 0 || IDquestionsDuringThisGame.length < 3 ) {
+          if (numberOfQuestions % 4 != 0 || IDquestionsDuringThisGame.length < 4 ) {
             pickRandomQuestion = questions[Math.floor(Math.random()*questions.length)];
             while (lastQuestionID === pickRandomQuestion.id) {
               pickRandomQuestion = questions[Math.floor(Math.random()*questions.length)];
@@ -1408,7 +1408,6 @@
           }
           LETSGO();
         }
-        
       }
 
       function LETSGO() {
@@ -1426,7 +1425,7 @@
         pickTheQuestion(currentNBdiffQuestionsChoosen,currentThemeChoosen)
         const zoneQuestion = document.getElementById("zone-question-id");
         const showAnswerButton = document.getElementById("show-answer-button-id");
-        document.getElementById("show-answer-button-id").innerHTML = "REPONSE";
+        document.getElementById("show-answer-button-id").innerHTML = "VOIR LA REPONSE";
         document.getElementById("answer-response-id").innerHTML = "";
         zoneQuestion.style = 'box-shadow: none;'
         showAnswerButton.style = 'background-color: rgb(122,198,127);'
@@ -1445,7 +1444,7 @@
         document.getElementById("regame-button-id").innerHTML = "";
         document.getElementById("regame-button-id").style = "background-color: transparent;";
         document.getElementById("regame-button-id").disabled = true;
-        document.getElementById("show-answer-button-id").innerHTML = "REPONSE";
+        document.getElementById("show-answer-button-id").innerHTML = "VOIR LA REPONSE";
         document.getElementById("show-answer-button-id").style = "background-color: rgb(122,198,127);";
         document.getElementById("play-button-id").innerHTML = "Jouer";
         document.getElementById("trouver-le-plus-de-bonnes-reponses-text").innerHTML = "Trouver le plus de bonnes réponses !";
